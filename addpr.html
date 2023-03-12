@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<!--
+To change this license header, choose License Headers in Project Properties. 
+To change this template file, choose Tools | Templates and open the 
+template in the editor. 
+--> 
+<html> 
+    <head><style>
+            body{
+                background-color: #000000;
+            }
+            .box{
+                margin: 50px 450px;
+                width: 300px;
+                background-color: white;
+                border: 2px
+                    solid red;
+                padding: 60px
+                    70px;
+                height: 300px;
+            }
+            .add{
+                text-align: center;
+                background-color: goldenrod;
+                color: #ffffff;
+                border-radius: 20px;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                overflow:
+                    hidden;
+                background-color:
+                    #ffcc66;
+                text-align: center;
+                border: 2px solid red;
+            }
+            li{
+                float: right;
+            }
+            li a {
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 25px 16px;
+                text-decoration: none;
+            }
+        </style> 
+        <title>Add Product </title> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head> 
+    <body> 
+        <ul> 
+            <li style="float: left; font-size: large;padding: 25px 16px;color: #000000"> Add Products </li> 
+            <li><a href="about.html">About</a></li> 
+            <li><a href="addpr.html">Add Product</a></li> 
+            <li><a href="admin.jsp">Admin Page</a></li> 
+        </ul> 
+        <div class="box"> 
+            <form action="addpr.jsp"> 
+                <h1 class="add">Add Product </h1> 
+                <table> 
+                    <b><tr><td>Enter Product id :</td><td> 
+                                <input type="text" name="t1" style="border-radius: 10px;"></td></tr> 
+                        <tr><td>Product Name :</td><td> 
+                                <input type="text" name="t2" style="border-radius: 10px;"></td></tr> 
+                        <tr><td>Price :</td><td> 
+                                <input type="text" name="t3" style="border-radius: 10px;"></td></tr> 
+                        <tr><td>Category :</td><td> 
+                                <input type="text" name="t4" style="border-radius: 10px;"></td></tr> 
+                        <tr><td>Discription :</td><td> 
+                                <input type="text" name="t5" style="border-radius: 10px;"></td></tr> 
+                        <tr><td>Image :</td><td> 
+                                <input type="text" name="t6" style="border-radius: 10px;"></td></tr> 
+                    </b> 
+                </table> 
+                <br><input type="submit" name="b1" value="Process" style="width: 100% ;height:30px;
+                           backgroundcolor: orange;
+                           font-size: 20px; text-decoration: none; color: black; border:1px solid #000000"> 
+            </form> 
+        </div> 
+    </body> 
+</html>
